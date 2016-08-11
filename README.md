@@ -1,2 +1,2 @@
 # SwiftStack problems
-Implemented SwiftStack programming problems in Python and Go.
+Implemented solutions to SwiftStack programming problems in Python.
