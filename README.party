@@ -1,0 +1,23 @@
+Run party.py -h to see input options.  Here is the problem description:
+_____________________
+
+John Partyson is the CEO at PartyCo, and he wants to celebrate a record-breaking year with a company party. Not just any company party, though; the best company party possible, as befits a company called PartyCo.
+
+To that end, he's come up with a party-animal score for every employee of PartyCo. The party-animal score is a number, and the higher the party-animal score, the more fun that the employee will contribute to a party. Party-animal scores may be positive, negative, or zero.
+
+However, John Partyson knows that who you party with is important. If an employee's boss is at a party, then the employee will spend all their time looking over their shoulder for their boss, and that's not fun. Therefore, at this company party, no employee and their boss will both be invited. A boss's boss is okay, but you can't have both an employee and their boss.
+
+Your task, as a PartyCo programmer, is to write a program that takes in an employee listing and outputs the guests to invite in order to maximize the sum of the guests' party-animal scores.
+
+The input will be given to your program on standard input as a JSON document in the following form:
+
+[ { "name": "John Partyson", "boss": null, "party-animal-score": 57.1 }, { "name": "Steve McFunGuy", "boss": "John Partyson", "party-animal-score": 12.2 }, # ... and so on ]
+Your program must print, on standard output, the names of the employees to include in the party. Print one name per line; the names do not need to be in any particular order.
+
+No two employees will have the same name, so there is no need to worry about name collisions.
+
+Each employee has exactly one boss and appears in the input exactly one time except for the CEO, who has no boss.
+
+PartyCo is going to sell your code as a service to other companies, so do not assume that the CEO is always named John Partyson.
+
+For bonus points: ensure that your solution always invites the CEO.
