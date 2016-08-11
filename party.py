@@ -6,6 +6,18 @@ import json
 import fileinput
 from itertools import combinations
 
+usage = """
+    Usage: party.py [company data JSON filename]
+
+           party.py<ret>
+           [paste company data as JSON]
+           <EOF>
+"""
+
+if sys.argv[1].startswith("-h"):
+    print usage
+    exit(1)
+
 def party_score(invitees):
     return sum(p['score'] for p in invitees)
 
